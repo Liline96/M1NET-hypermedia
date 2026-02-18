@@ -400,6 +400,14 @@
             transition-delay: 0s;
             transition-duration: .2s
         }
+        .l-Section {
+            max-width: 500px; 
+            margin: 50px auto; 
+            padding: 20px;
+            background-color: rgba(111, 209, 189, .5);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1); 
+            }
 
         @media print {
             html {
@@ -517,6 +525,7 @@
                 content: "(206) 960-0961";
                 padding-left: 1.6rem
             }
+                      
         }
 
         @page {
@@ -578,28 +587,35 @@
 
       
         <section class="l-Section">
-            <h2 class="l-Section-title h3">Education</h2>
+            <h2 class="l-Section-title h3">Contact</h2>
             <div class="l-Section-content">
                 <div class="l-Section-group">
-                    <h3>Master Humanités Numériques parcours Numérique : Enjeux et Technologies</h3>
-                    <a class="u-link" href="https://www.univ-paris8.fr">Université Paris VIII</a>
-                    <br> 2025 à ...
-                   <ul>
-                        <li>Développer un MVP d’application web de tracker d’habitude no-code sur Bubble</li>
-                        <li>Modéliser et présenter un classeur Tableau sur l’usage des smartphones en France </li>
-                        <li>Élaborer un dossier d’étude préalable d’un projet innovant de cassiers connectés viable</li>
-                    </ul>
-                </div>
+                   <form action="/action_page.php">
+                    <div>
+                        <label for="fnom">Nom:</label><br>
+                        <input type="text" id="fnom" name="fnom" value=""><br> 
+                    </div>
+                   <div>
+                        <label for="fprenom">Prenom:</label><br>
+                        <input type="text" id="fprenom" name="fprenom" value=""><br>
+                    </div>                    
+                    <div>
+                        <label for="femail">Votre email:</label><br>
+                        <input type="email" id="femail" name="femail" value=""><br>
 
-                <div class="l-Section-group">
-                    <h3>Licence de Lettres Modernes</h3>
-                    <a class="u-link" href="https://www.univ-paris8.fr">Université Paris VIII</a>
-                    <br> 2014 à 2020
-                    <ul>
-                        <li>Définir une ligne éditoriale, rédiger des articles et concevoir un site WordPress </li>
-                        <li>Retranscrire et éditer l’article Se faire des idées de Vilém Flusser (revue Multitudes n°74)  </li>
-                        <li>Élaborer et présenter un communiqué et un dossier de presse pour une campagne de communication</li>
-                    </ul>
+                    </div>
+            
+                    <div>
+                       <br><label for="ftextearea">Commentaire:</label><br>
+                       <textarea name="message"></textarea>                      
+                    </div>
+                    <div> 
+                        <br><label for="myfile">Selectionner un fichier:</label><br>
+                        <input type="file" id="myfile" name="myfile"><br>
+                    </div>                    
+                    <br><input type="submit" value="Valider"><br>
+                    
+                   </form>
                 </div>
 
                
